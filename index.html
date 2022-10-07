@@ -36,14 +36,32 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        
+                    <div class="container">
+                        <div class="hero">Computer's Choice</div>
+                        <div class="comp-item">
+                            <img src="images/rock-svgrepo-com.svg" alt="Rock" width="100" class="comp comp-hidden">
+                            <img src="images/paper-svgrepo-com.svg" alt="Paper" width="100" class="comp comp-hidden">
+                            <img src="images/scissors-svgrepo-com.svg" alt="Scissors" width="100" class="comp comp-hidden">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <script>
+        addEventListener("DOMContentLoaded", () => {
+            var index = 0;
+            const comp = document.querySelectorAll(".comp");
+            const hide = "comp-hidden", count = comp.length;
+            randomise();
+            function randomise() {
+                comp[(index++) % count].classList.add(hide);
+                comp[index % count].classList.remove(hide);
+                setTimeout(randomise, 100);
+            }
+        });
+    </script>
     <script src="main.js"></script>
 </body>
 

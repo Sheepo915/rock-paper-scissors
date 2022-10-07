@@ -140,9 +140,29 @@ body {
     padding: 1rem;
     background-color: var(--clr-primary-100);
     margin-inline: 1rem;
+    position: relative;
 }
 
 .item img {
     box-shadow: 0 5px 1.2rem -1rem gray;
     border-radius: .8rem;
+}
+
+.comp-item {
+    border: 2px solid var(--clr-accent-400);
+    border-radius: 0.7rem;
+    padding: 1rem;
+    background-color: var(--clr-primary-100);
+    margin-inline: 1rem;
+    width: 8.5rem !important;
+}
+
+.comp-item img {
+    box-shadow: 0 5px 1.2rem -1rem gray;
+    border-radius: .8rem;
+}
+
+
+.comp-hidden {
+    display: none !important;
 }
